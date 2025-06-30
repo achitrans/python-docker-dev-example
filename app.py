@@ -26,7 +26,6 @@ async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
     create_db_and_tables()
     yield
 
-
 app = FastAPI(lifespan=lifespan)
 
 
